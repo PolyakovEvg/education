@@ -1,0 +1,457 @@
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+      box-sizing: border-box;
+  }
+  img{
+      width: 100%;
+      height: auto;
+  }
+  *,*::before,*::after{
+      box-sizing: inherit;
+  }
+  body{
+      font-family: 'Lato';
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: normal;
+      color: #102746;
+      margin: 0;
+      
+  }
+  /* header styles start */
+    .header{
+        
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        
+    }
+  .wrapper{
+      max-width: 1060px;
+      margin: 0 auto;
+  }
+     .wrapper-full{
+        max-width: 1262px;
+        margin: 0 auto;
+  }
+  .section-title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+  }
+  .section-title::after{
+      display: block;
+      content: "";
+      width: 253px;
+      height: 3px;
+      background: #006DFE;
+      position: absolute;
+      bottom:0;
+      left: 0;
+  }
+  .header__wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-top: 56px;
+
+  }
+  .header__list{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .header__item{
+      margin-right: 82px;
+      list-style-type: none;
+  }
+  .header__item:last-child{
+      margin-right: 0;
+  }
+  .header__link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    
+  }
+  .header__link:hover,.header__link:focus,.header__link:active{
+      opacity: .75;
+
+  }
+   /* header styles end */
+
+   /* intro styles start */
+   .intro{
+       min-height: 100vh;
+       background: url(../img/intro-bgpng.png);
+       background-repeat: none;
+       background-size: cover;
+       padding-top: 263px;
+       padding-bottom: 223px;
+   }
+   .intro__title{
+    max-width: 613px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+    margin-top:0;
+   }
+   .intro__subtitle{
+       max-width: 546px;
+       font-size: 16px;
+       line-height: 24px;
+       color: #FFFFFF;
+       margin-bottom: 59px;
+   }
+   .search__form__field{
+       width: 297px;
+       background: url(..//img/circle-icon.svg) left 4px;
+       background-repeat: no-repeat;
+       background-size: 20px;
+       border:0;
+       border-bottom: 2px solid #BFC0C5;
+       margin-right: 60px;
+       padding-left: 43px;
+       padding-bottom: 22px;
+       font-size: 18px;
+       line-height: 24px;
+       color: #FFFFFF;
+
+   }.search__form__field::placeholder{
+       color: #FFFFFF;
+       font-size: 18px;
+       line-height: 24px;
+   }
+   .search-form__submit{
+       padding: 15px 39px 15px 39px;
+       font-weight: 500px;
+       font-size: 24px;
+       line-height: 29px;
+       text-transform: uppercase;
+       background-color: #1B7DFF;
+       color: #FFFFFF;
+       border: 0;   
+   }
+   .search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active{
+       color: #155dbb;
+       opacity: 75;
+   }
+   /* intro styles end */
+
+   /* benefits styles start */
+   .benefits{
+       margin-bottom: 131px;
+    
+   }
+   .benefits__wrap{
+       max-width: 1262px;
+       margin: 0 auto;
+       background: #FFFFFF;
+       box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+       position: relative;
+       
+      
+   }
+   .benefits__cards{
+       display: grid;
+       grid-template-columns: repeat(3, 3fr);
+       column-gap: 55px;
+       padding: 0 100px;
+       
+
+   }
+   .benefits__title{
+        width: 100%;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 42px;
+        color: #102746;
+        padding: 93px 100px 88px 100px;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: #FFFFFF;
+        transform: translateY(-100%);
+        margin: 0;
+   }
+   .benefits-card__title{
+        color: black;
+   }
+.benefits__card{
+        grid-column: span 1;
+        padding-bottom: 112px;
+
+}
+.benefits-card__pic{
+        margin-bottom: 37px;
+        max-width: 66px;
+}
+.benefits-card__img{
+        display: block;
+}
+.benefits-card__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 26px;
+}
+
+.benefits-card__desc{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 39px;
+}
+.benefits-card__link{
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #006DFE;
+        padding-right: 59px;
+        background: url(../img/arrow-icon.svg) no-repeat;
+        background-position: 95%  center;
+}
+.benefits-card__link:hover, .benefits-card__link:focus{
+    background-position: right center ;
+    transition: .2s all;
+    
+}
+ /* benefits styles end */
+
+ /* places styles start */
+.places__title{
+    padding-bottom: 10px;
+    margin-right: 15px;
+    
+}
+.places__caption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.places__cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+.places__card{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.places__card::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(21, 24, 36, 0.4); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.places__card:hover .places-card__pic{
+    transform: scale(1.05);
+    
+
+}
+.places-card__title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 29px;
+    bottom: 27px;
+    z-index: 3;
+}
+.places-card__large{
+    grid-column: span 3;
+    display: block;
+}
+.places-card__pic{
+    object-fit: cover;
+    transition: .15s all;
+}
+.places-card-link{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    left: 0;
+    top:0;
+    position: absolute;
+}
+.places-card__short{
+    grid-column: span 2;
+    display: block;
+}
+.places-card__pic__large{
+    height: 354px;
+    object-fit: cover;
+}
+.places-card__pic__short{
+    height: 283px;
+    object-fit: cover;
+}
+.places{
+    margin-bottom: 131px;
+}
+/* places styles end */
+
+/* places-info styles start */
+.tours{
+    margin-bottom: 139px;
+}
+.tour-info{
+    max-height: 354px;
+}
+
+.tours-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 77px;
+
+}
+.tour-pic:hover .tour-miniature {
+    transform: scale(1.05);
+}
+.tour-miniature{
+    display: block;
+    object-fit: cover;
+    transition: .15s all;
+}
+.tour-info-title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #102746;
+    
+    
+    grid-column: span 1;
+    position: relative;
+    margin:0 0 85px 0;
+}
+.tour-info-desc{
+
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 58px 0;
+}
+.tour-pic{
+    overflow: hidden;
+}
+.tour-info-bottom{
+    padding-left: 44px;
+}
+.tour-info-desc-top{
+    margin-right: 43px;
+}
+/* places-info styles end */
+
+/*  visit styles start */
+
+.visit-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 58px 0 0;
+}
+
+.visit-photo-stats{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: rgba(21, 24, 36, 0.6);;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    color: #FFFFFF;
+    
+}
+.visit-photo{
+    position: relative;
+    max-width: 386px;  
+    max-height: 377px;
+    
+
+}
+.visit-photo-stats-title{
+    margin: 0px;
+}
+.visit-photo-icon{
+    max-height: 14px;
+    max-width: 14px;
+    padding: 21px 25px 20px 0px;
+    
+}
+.visit-photo-stats-title{
+    padding: 16px 0px 15px 25px;
+    margin-right: 157px;
+}
+.visit-photo-stats-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+.visit-photo-likes{
+    padding: 16px 0px 15px 0px;
+    margin-right: 14px;
+}
+.visit-photo-likes-value{
+    padding-right: 4px;
+}
+.visit-photo-comment{
+    padding: 16px 0px 15px 0px;
+}
+.visit-photo-comment-value{
+    padding-right: 4px;
+}
+.visit-photo-stats-title{
+    font-weight: normal;
+
+}
